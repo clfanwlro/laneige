@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <link rel=" shortcut icon" href="images/파비콘.ico">
+  <meta charset="UTF-8">
+  <title>lanaige</title>
+  <!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+   $(document).ready(function(){
+       $ ('#slide_btbox>ul>li').click(function(){
+           $(this).css({'border': '2px solid #000','background-color':'transparent'})
+           $(this).siblings().css({'background-color':'rgb(136, 127, 127)','width':'10px'})
+           $('#slide_imgbox').animate({'left': $(this).index()*-100 + "%"})
+       })
+       
+   })
+  </script>
+  
+  <style>
+   @font-face {
+      font-family: 'Arita-dotum-Medium';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+      font-weight: normal;
+      font-style: normal; }
+   *{ margin: 0; padding: 0; list-style: none; font-family: 'Arita-dotum-Medium';}
+   header { width: 100%; height: 60px; border-bottom: 1px solid #ddd; position: relative; }
+   #logo { width: 130px; height: 35px; float: left;  margin-left: 55px; margin-top: 12px;    }
+   #icon_menu { height: 25px; float: right; margin-right: 55px; margin-top: 17px;  }
+   #icon_menu>li { float: left; margin-left: 10px; }
+   #menu { width: 600px; height: 60px; line-height: 60px;  position: absolute; left: 0; right: 0; margin: auto; top: 0; text-align: center;  }
+   #menu>li { display: inline-block; margin:0 5px; font-size: 16px; position: relative;    cursor: pointer; }
+    #menu>li>.menu_line { width: 0; height: 3px; background-color: #000; position: absolute; left: 0; right: 0; bottom: 0; margin: auto;   transition: 0.5s; }
+   #menu>li:hover>.menu_line { width: 100%; }
+   #slide {width: 100%;height: 600px;background: url(images/slide1.jpg)center no-repeat;position: relative;}
+   #slide_imgbox {width: 500%;height: 600px;position: absolute;}
+   #slide_imgbox>li{width: 20%;height: 600px;float: left;position: relative;}
+   #slide_imgbox>li:nth-child(1){background: url(images/slide/slide1.png);}
+   #slide_imgbox>li:nth-child(2){background: url(images/slide/slide2.jpg);}
+   #slide_imgbox>li:nth-child(3){background: url(images/slide/slide3.jpg);}
+   #slide_imgbox>li:nth-child(4){background: url(images/slide/slide4.jpg);}
+   #slide_imgbox>li:nth-child(5){background: url(images/slide/slide5.jpg);}
+ .slide_text {width: 500px;height: 220px;position: absolute;left: 15%;top: 190px;}
+ .slide_text>h2 {font-size: 30px;line-height: 40px;}
+ .slide_text>h4 {font-size: 20px; margin-top: 15px;}
+ #slide_btbox {width: 300px;height: 50px;position: absolute;left: 0;right: 0;margin: auto;bottom: 20px;
+line-height: 50px;}
+ #slide_btbox>ul{display: inline-block;vertical-align: middle;}
+ #slide_btbox>ul>li {width: 10px;height: 10px;border-radius: 10px;background-color: rgb(136, 127, 127);display: inline-block; vertical-align: middle;margin: 2px;}
+
+#best{width: 100%;height: 900px;position: relative; overflow: hidden; }
+#best_product {width: 100%;height: 900px;position: absolute;left: 0;top: 0;}
+#best_product_bg1{width: 100%;height: 460px;}
+#best_product_bg2 {width: 100%;height: 440px;background-color:#fff;}
+#best_product_box {width: 1200px;height: 800px;position: absolute;top: 50px;left: 0;right: 0;margin: auto;text-align: center;}
+#best_product_box>h2 {line-height: 100px}
+#best_product_box>ul{margin-top: 20px;}
+#best_product_box>ul>li {width: 326px;height: 606px;margin: 37px;background-color: #fff;float: left;}
+#best_product_box>ul>li>h4 {font-size: 14px;margin-top: 20px;color: rgb(28, 31, 204);}
+.best_product {width: 100%;}
+#best_product_box>ul>li>h5 {margin-top: 20px;}
+#best_product_box>ul>li>img {padding: 20px;}
+#best_product_box>ul>li>p {font-size: 12px;}
+#best_product_box>ul>li>h6 {margin-top: 10px;}
+#best_prebtn{position: absolute;top: 0;bottom: 0;margin: auto;left: 50px;}
+#best_nextbtn{position: absolute;top: 0;bottom: 0;margin: auto;right: 50px;}
+#banner{width: 1200px;height: 650px;margin: auto;margin-top: 150px;}
+#banner>ul {}
+#banner>ul>li {width: 314px;height: 640px; margin-left: 66px;margin-right: 20px;margin-top: 5px;float: left;position: relative;}
+#banner>ul>li>img{width: 100%}
+.banner_rotate {width: 300px;height: 60px;line-height: 60px;position: absolute;left: -185px;top: 150px;transform: rotate(-90deg);text-align: right;}
+#banner2{width: 1200px;height: 1600px;margin: auto;margin-top: 80px;position: relative;}
+#banner2_box1{width: 670px;height: 540px;position: absolute;left: 90px;top: 30px;}
+#banner2_box2{width: 370px;height: 725px;position: absolute;right: 20px;top: 130px;}
+#banner2_box3{width: 370px;height: 705px;position: absolute;left: 60px; bottom: 30px;}
+#banner2_box4{width: 670px;height: 540px;position: absolute;right: 20px;bottom: 30px;}
+#banner2>div>img{width: 100%;}
+#banner2>div>p {font-size: 14px;margin-top: 15px;}
+#banner2_rotate{width: 300px;height: 60px;line-height: 60px;position: absolute;left: -185px;top: 150px;border: 1px solid #000;transform: rotate(-90deg);text-align: right;}
+#sns {width: 1200px;height: 400px;margin: auto;margin-top: 80px;}
+#sns>h2{line-height: 65px;text-align: center;font-weight: 300px;}
+#sns>h4{text-align: center;}
+#sns>ul {width: 1050px;height: 210px;margin: auto;margin-top: 40px;}
+#sns>ul>li{width: 200px;height: 200px;margin: 5px;background-color: rgb(116, 30, 30);float: left;overflow: hidden;position: relative;}
+.sns_img {width: 100%;position: absolute;left: 0;top: 0;transition: 0.5s;}
+#sns>ul>li:hover>.sns_img {top: -10px;}
+.sns_cart {position: absolute;left: 7px;top: 7px;}
+.sns_hover_box {width: 100%;height: 60px;background-color: #fff;position: absolute;left: 0;bottom: -60px;transition: 0.5s;}
+#sns>ul>li:hover>.sns_hover_box{bottom: 0;}
+.sns_hover_box>h6 {text-align: center;}
+.sns_hover_box>p {width: 180px;height: 30px;margin: auto;background: rgb(240, 227, 227);white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+#sns>button {width: 150px;height: 40px;margin: auto; border: 1px solid #000; transition: 0.5s;}
+#sns>button:hover{background-color: #4577be ;color: #fff;background-color: #4577be;}
+footer {width: 100%;height: 250px;}
+#footer1{width: 100%;height: 50px;border-top: 1px solid #000; border-bottom: 1px solid #000;}
+#footer1_box{width: 1200px;height: 25px;line-height: 25px;margin: auto;margin-top: 12px;}
+#footer1_menu1{width: 920px;height: 25px;float: left;}
+#footer1_menu2{width: 170px;height: 25px;float: right;}
+#footer2 {width: 1200px;height: 200px;margin: auto;}
+#footer2_left {width: 620px;height: 120px;margin-top: 10px;float: left;}
+#footer2_right {width: 260px;height: 40px;margin-top: 20px;float: right;}
+#footer1_menu1>li {float: left;margin-right: 20px;}
+#footer1_menu2>li{float: left;margin-right: 10px;}
+#footer2_left>h2 { font-size: 13px;margin-top: 20px;}
+#footer2_left>img {float:right; margin-right: 90px;margin-bottom: 100px;vertical-align: middle;}
+#footer2_left>p{margin-top: 40px;vertical-align: middle;display: inline-block}
+
+#footer2_right>select {width: 260px;height: 40px;border: 1px solid #000;}
+</style> </head> <body>
+   <header>
+         <h1 id="logo">
+               <img src="laneige-logo.svg" alt="">
+         </h1>
+         <ul id="icon_menu">
+               <li><img src="icons/header-icon_1.png" alt=""></li>
+               <li><img src="icons/header-icon_2.png" alt=""></li>
+               <li><img src="icons/header-icon_3.png" alt=""></li>
+         </ul>
+         <ul id="menu">
+               <li>브랜드<div class="menu_line"></div>   </li>
+               <li>미츠 아트<div class="menu_line"></div></li>
+               <li>베스트 & 신상품<div class="menu_line"></div></li>
+               <li>스킨케어<div class="menu_line"></div></li>
+               <li>메이크업<div class="menu_line"></div></li>
+               <li>옴므<div class="menu_line"></div></li>
+               <li>이벤트<div class="menu_line"></div></li>
+         </ul>
+   </header>
+   <div id="slide">
+       <ul id="slide_imgbox">
+           <li><div class="slide_text">
+            <h2>ALL NEW워터뱅크 블루 히알루로닉 </h2>
+            <h4>1/2000사이즈의 초소현 블루 히알루론산이 <br>피부 깊은 곳부터,빈틈없이. 건강한 피부로 <br> 폴 리페어 보습</h4>
+             </div></li>
+           <li><div class="slide_text">
+            <h2>래디언-c어드밴스드 이펙터</h2>
+            <h4>매일 매일 환해지는 피부를 위한 첫단계 스킨케어</h4>
+             </div></li>
+           <li><div class="slide_text">
+            <h2>래디언-c크림</h2>
+            <h4>초강력 톤업부스터의 힘으로 피부코어부터 맑아지는 비타민크림</h4>
+             </div></li>
+           <li><div class="slide_text">
+            <h2>피토베타인 수부지 컨트롤 앰플</h2>
+            <h4>피부에 꼭 필요한 보습을 채워주어 유수분 밸런스를 맞춰주는 앰플</h4>
+             </div></li>
+           <li><div class="slide_text">
+            <h2>립 트린트먼트 밤</h2>
+            <h4>진주빛 펄과 고효능 성분이 화사한 볼륨업 입술로 연출해주는 데일리 립밤</h4>
+             </div></li>
+       </ul>
+      
+       <div id="slide_btbox">
+           <img src="icons/KakaoTalk_20220124_100250503_01.png" alt="" id="slide_prev_btn">
+           <img src="icons/KakaoTalk_20220124_100322737.png" alt="" id="slide_next_btn">
+           <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+           </ul>
+
+           <img src="icons/KakaoTalk_20220124_100250503_02.png" alt="" id="slide_next_btn" >
+           
+       </div>
+   </div>
+   <div id="best">
+   <video src="images/bestseller-bg.mp4" id="best_bg" autoplay loop muted></video>
+   <div id="best_product">
+       <div id="best_product_bg1"></div>
+       <div id="best_product_bg2"></div>
+       <div id="best_product_box">
+
+       <h2></h2>
+       <ul>
+           <li><img src="images/aa.png" alt="" class="best_product">
+           <h4>CREAM SKIN REFINER </h4>
+           <h3>크림스킨</h3>
+           <img src="icons/따옴표.png" alt="" class="best_icon">
+           <p>스킨인데 뛰어난 보습지속력과 산뜻한 <br> 사용감으로 이만한 스킨은 없는것 같아요</p>
+           <h6>@rabb******</h6></li>
+           <li><img src="images/bb.png" alt="" class="best_product">
+           <h4>NEO CUSHION</h4>
+           <h3>네오 쿠션 </h3>
+           <img src="icons/따옴표.png" alt="" class="best_icon">
+           <p>마스크때문에 매트한 쿠션 샀는데 지금까지 썼던 <br>  쿠션 중에 제일 마무리감이 좋았어요</p>
+           <h6>@euns******</h6></li>
+           <li><img src="images/cc.png" alt="" class="best_product">
+           <h4>RADIAN-C CREAM</h4>
+           <h3>래디언-C 크림</h3>
+           <img src="icons/따옴표.png" alt="" class="best_icon">
+           <p>벌써 3통째에요! 기미가 고민인 요즘 사용하면 <br>  피부가 밝아지고 확실히 잡티가 옅어지네요~</p>
+           <h6>@enji****</h6>
+           </li>
+       </ul> 
+       <img src="icons/prev-bt.png" alt="" id="best_prebtn">
+       <img src="icons/next-bt.png" alt="" id="best_nextbtn">
+       </div>
+   </div>
+</div>
+<div id="banner">
+    <ul>
+        <li><img src="images/qq.jpg" alt="">
+        <h3>FEEL the GLOW</h3>
+        <p>내 피부 본연의 건강한 빛, 내 삶의 빛나는 자신감</p></li>
+        <div class="banner_rotate">BRAND STORY</div>
+        <li><img src="images/ww.png" alt="">
+        <h3>래디언-C 크림</h3>
+        <p>초강력 톤업부스터의 힘으로 피부 코어부터 맑아지는 비타민 크림</p></li>
+        <div class="banner_rotate">BEST SELLER</div>
+        <li><img src="images/ee.png" alt="">
+        <h3> 내가 크리에이터라면? 참여하기 </h3>
+        <p>라이프스타일로 알아보는 크리에이터 유형 테스트</p></li>
+        <div class="banner_rotate">LIFESTYLE TEST</div>
+    
+    </ul>
+</div>
+<div id="banner2">
+    <div id="banner2_box1"><img src="images/11.jpg" alt="">
+    <h3>피토알렉신 수분진정 토너</h3>
+    <p>매일 자극받는 피부를 케어해주는 민감 진정 수분 토너</p>
+    <div class="banner2_rotate">NEW ARRIVALS</div></div>
+    <div id="banner2_box2"><img src="images/22.jpg" alt="">
+    <h3>명동 쇼롱</h3>
+    <p>편안하게 제품을 체험하고 브랜드를 경험할 수 있는 라네즈 브랜드 공간</p>
+    <div class="banner2_rotate">FLAGSHIP STORE</div></div>
+    <div id="banner2_box3"><img src="images/33.png" alt="">
+    <h3>네오 쿠션</h3>
+    <p>함부로 묻지않게,네오로 밀착</p>
+    <div class="banner2_rotate">BEST SELLER</div></div>
+    <div id="banner2_box4"><img src="images/dd.jpg" alt="">
+    <h3>네오 파운데이션</h3>
+    <p>얇고 촘촘한 구름결 커버</p>
+    <div class="banner2_rotate">NEW ARRIVALS</div></div>
+</div>
+<div id="sns">
+    <h2>#GLOW LIVE</h2>
+    <h4>SHARE YOUR GLOW MOMENTS WITH LANWIGE!</h4>
+    <ul>
+        <li><img src="images/라네즈1.jpg" alt="" class=sns_img>
+        <img src="icons/자물.png" alt="" class="sns_cart">
+    <div class="sns_hover_box">
+        <h6>@miittocador</h6>
+                <p>buenos días! 🌼 tal como me des</p>
+    </div>
+    </li>
+        <li><img src="images/라네즈2.jpg" alt="" class=sns_img>
+            <img src="icons/자물.png" alt="" class="sns_cart">
+            <div class="sns_hover_box">
+                <h6>@miittocador</h6>
+                <p>buenos días! 🌼 tal como me des</p>
+            </div></li>
+        <li><img src="images/라네즈3.jpg" alt="" class=sns_img>
+            <img src="icons/자물.png" alt="" class="sns_cart">
+            <div class="sns_hover_box">
+                <h6>@geungbee</h6>
+                <p>#광고 로 만났지만 써보니 넘 좋아</p>
+            </div></li>
+        <li><img src="images/라네즈4.jpg" alt="" class=sns_img>
+            <img src="icons/자물.png" alt="" class="sns_cart">
+            <div class="sns_hover_box">
+            <h6>@geungbee</h6>
+            <p>#광고 로 만났지만 써보니 넘 좋아서</p></div></li>
+        <li><img src="images/라네즈 5.jpg" alt=""class=sns_img>
+            <img src="icons/자물.png" alt="" class="sns_cart">
+            <div class="sns_hover_box">
+            <h6>@aerabeautydiary</h6>
+            <p>after years and years, the laneige</p></div></li>
+
+            <div><img src="icons/next-bt.png" alt=""></div>
+  
+    </ul>
+  <button>view More</button>
+    
+     
+</div>
+<footer>
+    <div id="footer1">
+        <div id="footer1_box">
+            <ul id="footer1_menu1">
+                <li>회사소개</li>
+                <li>서비스이용약관</li>
+                <li>UGC이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>영상정보처리방침</li>
+                <li>뷰티포인트</li>
+                <li>사이트맵</li>
+                <li>공지사항</li>
+            </ul>
+            <ul id="footer1_menu2">
+                <li><img src="icons/sns_instagram_renew.png" alt=""></li>
+                <li><img src="icons/sns_facebook_renew.png" alt=""></li>
+                <li><img src="icons/sns_youtube_renew.png" alt=""></li>
+                <li><img src="icons/sns_tiktok_renew.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer2">
+        <div id="footer2_left">
+            <h2>고객상담실 (수신자요금부담)080-023-5454 운영시간 : 월~금 09:00 ~ 18:00</h2> <img src="icons/wa-mark (1).png" alt="">
+            <p>AMOREPACIFIC CORPORATION ALL RIGHTS RESERVED</p>
+        </div>
+        <div id="footer2_right"><select name="" id="">
+            <option value="">한국/한국어</option>
+            <option value="">INTERNATIONAL/ENGLISH</option>
+            <option value="">中国大陆/中文</option>
+            <option value="">SINGAPORE/ENGLISH</option>
+            <option value="">MALAYSIA/ENGLISH</option>
+            <option value="">ประเทศไทย/ไทย</option>
+            <option value="">VIỆT NAM/TIẾNG VIỆT</option>
+            <option value="">INDONESIA/BAHASA </option>
+            <option value="">INDONESIA/option>
+            <option value="">HONGKONG CHINA/ENGLISH</option>
+            <option value="">中國香港/繁體中文</option>
+            <option value="">CANADA/ENGLISH</option>
+        </select></div>
+    </div>
+</footer>
+ </body>
+</html>
